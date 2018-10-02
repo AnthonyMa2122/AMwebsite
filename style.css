@@ -3,6 +3,7 @@ body {
   font-family: sans-serif;
   background-size: cover;
   background-attachment: fixed;
+  margin: 0;
 }
 
 .globalnavbar{
@@ -23,9 +24,11 @@ body {
   font-size: 20px;
   padding-top: 40px;
   padding-left: 20px;
+  padding-right: 20px;
   text-decoration: none;
   opacity: 1;
   color: #4d4d4d;
+
 }
 
 .globalnavbar a:hover {
@@ -43,48 +46,73 @@ body {
   align-self: flex-start;
 }
 
+.quote{
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  height: 100vh;
+}
+
+.jobtitle{
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
 .homepage-section-aboutme{
   width: 100%;
-  height: 500px;
-  clear: left;
+  height: 100vh;
+  padding-left: 15px;
+  padding-right: 15px;
+
 }
 
 .homepage-section-aboutme .profilepic{
-  width: 75%;
-  max-width: 350px;
+  max-width: 250px;
   height: auto;
   border-radius: 50%;
+  clear: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.homepage-section-aboutme .name{
+  text-align: center;
 }
 
 .homepage-section-aboutme .profiledescription{
-
+  text-align: center;
+  display: inherit;
+  margin-left: inherit;
+  margin-right: inherit;
 }
 
 .homepage-section-portfolio{
   width: 100%;
-  background: #B2B1B1;
-  height: 500px;
+  background: #717070;
+  height: 100vh;
+  rgb(89, 89, 89, 0.5)
+  filter: alpha(opacity=60);
+}
+
+.homepage-section-portfolio .aboutme-p{
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
 }
 
 .homepage-section-contact{
   width: 100%;
-  background: #white;
-  height: 500px;
+  height: ;
 }
 
-.contactme {
+.contactme-footer {
   vertical-align: baseline;
   margin: 0;
   padding: 0;
-}
-
-
-
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
+  background-color: #1d242a;
+  color: white;
+  rgb(51, 51, 51, 0.9);
 }
