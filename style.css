@@ -105,8 +105,10 @@ body {
 }
 
 .homepage-section-portfolio .porfolioimg{
+  width: auto;
   height: auto;
-  width: 300px;
+  max-width: 300px;
+  max-height: 300px;
   border-radius: 20px;
   height: auto;
   clear: center;
