@@ -99,9 +99,20 @@ body {
 
 .homepage-section-portfolio{
   width: 100%;
-  height: 100vh;
+  height: auto;
   background: rgba(89, 89, 89, 0.5);
   filter: alpha(opacity=60);
+}
+
+.homepage-section-portfolio .porfolioimg{
+  height: auto;
+  width: 300px;
+  border-radius: 20px;
+  height: auto;
+  clear: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .homepage-section-portfolio .aboutme-p{
@@ -112,14 +123,13 @@ body {
 
 .homepage-section-contact{
   width: 100%;
-  height: ;
+  height: auto;
 }
 
 .contactme-footer {
   vertical-align: baseline;
   margin: 0;
   padding: 0;
-  background-color: #1d242a;
   color: white;
   background-color: rgba(51, 51, 51, 0.9);
 }
