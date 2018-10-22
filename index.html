@@ -5,16 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type='text/css' href="./style.css">
-  <script src="/script.js"></script>
   <title>Anthony Ma - Software Developer</title>
 </head>
 
 
-<body class = "main" background="sanfranciscobackground.jpg">
+<body class = "main" background="imges/sanfranciscobackground.jpg">
 
-  <nav class="globalnavbar">
+  <nav id="nav">
     <div>
-    <li id="logo">Logo</li>
+    <li id="logo">Anthony Ma</li>
     <a href="#Aboutme">About Me</a>
     <a href="#Porfolio">Porfolio</a>
     <a href="#ContactMe">Contact Me</a>
@@ -22,64 +21,73 @@
   </nav>
 
   <section class="workhistory">
-    <header class = "quote">
-      "Hey! I'm Anthony Ma, software developer and Tolkien enthusiast in San Francisco. Want to collab?"
-    </header>
+    <header class = "myName">Anthony Ma</header>
+    <hr>
     <div class="timeline">
-     B.S. in Computer Science at San Francisco State University
-    </div>
+     <p>Software | Testing | Planning</p>
+     </div>
+     <a href="#AboutMe" class="btn btn-primary btn-xl page-scroll">About me</a>
   </section>
 
   <section class="homepage-section-aboutme" id="Aboutme">
-  <div>
+    <header class="whoami">Who am I?</header>
     <div class="profilepic-div">
       <img class= "profilepic" src="imges/Bojackprofilepic.jpg" alt="">
     </div>
-    <header class="name">
-      Anthony Ma
-    </header>
-    <header class ="jobtitle">
-      Software Developer | Quality Engineer | Student
-    </header>
-    <header class="profiledescription">
-      I'm a recent graduate from San Francisco State University (Class of August 2018). Go Gators!!
-    </header>
-  </div>
+    <hr>
+    <p class="profiledescription">My name is Anthony and I'm a recent graduate from San Francisco State University (Class of August 2018). Currently I live in the lovely San Francisco bay area and am an avid programmer. I spend most of my free time studying or failing at rock climbing.
+      There is always something to learn and hopefully I find it on the way up!
+
+    </p>
+  </section>
+
+  <section class="skills">
+    <div>
+      <header>Skills</header>
+    </div>
   </section>
 
   <section class="homepage-section-portfolio">
-    <p class="aboutme-p">portfolio materials</p>
-
-    <section class="Crowdtour">
-      Crowdtour
+    <p class="aboutme-p"> My Projects</p>
+    <div class="Crowdtour">
       <img class="porfolioimg" src="imges/Crowdtourimg.jpeg" alt="">
-      <div>Our neat little python project. The goal was to geocache audio files onto for others to listen to. Check out our pet project here.</div>
-    </section>
-    <section class="Snakegame">
-      Slither Snake
+      <div class="projectdesc">
+        <p>Our neat little python project. The goal was to geocache audio files onto for others to listen to. Check out our pet project here.</p>
+      </div>
+      <button class ="projectbtn">Project</button>
+    </div>
+    <div class="Snakegame">
       <img class="porfolioimg"src="imges/Snakey.jpg" alt="">
-      <div>Imagine snake! Now imagine your little reptile with a higher range of motion. Rather than restrict our buddy to four directions, we decided to give it some freedom. This project was done on Java and Javafx!</div>
-    </section>
-    <section class="Meetup_Groups">
-      Meetup Groups
+      <div class="projectdesc">
+        <p>Imagine snake! Now imagine your little reptile with a higher range of motion. Rather than restrict our buddy to four directions, we decided to give it some freedom. This project was done on Java and Javafx!</p>
+      </div>
+      <button class ="projectbtn">Project</button>
+    </div>
+    <div class="Meetup_Groups">
       <img class="porfolioimg" src="imges/meetupgroups.png" alt="">
-      <div>Want to find a group within the Bay Area? No problem! In this android application, we've called Meetup's API to help you find your group on your most convenient of Android devices!</div>
-    </section>
-    <section class ="Student_Swap">
-      Student Swap
+      <div class="projectdesc">
+        <p>Want to find a group within the Bay Area? No problem! In this android application, we've called Meetup's API to help you find your group on your most convenient of Android devices!</p>
+      </div>
+    </div>
+    <div class ="Student_Swap">
       <img class="porfolioimg" src="imges/StudentSwap.jpg" alt="">
-      <div>As recent college grads, we understand the struggles of spending on expensive textbooks and materials. Our website built on Symphony's framework makes it easy for students to barter with other fellow SFSU students. A thrifty Gator is a smart Gator!</div>
-    </section>
+      <div class="projectdesc">
+        <p>As recent college grads, we understand the struggles of spending on expensive textbooks and materials. Our website built on Symphony's framework makes it easy for students to barter with other fellow SFSU students. A thrifty Gator is a smart Gator!</p>
+      </div>
+    </div>
+</section>
 
-  </section>
-
-  <section class="homepage-section-contact">
+<section class="homepage-section-contact">
     My contact screen?
-  </section>
+</section>
 
-  <footer class= "contactme-footer">
+<footer class= "contactme-footer">
     <div>Why tomorrow? Let's get this footer done today!!</div>
-  </footer>
+</footer>
 
+
+<!-- jQuery -->
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -1,63 +1,115 @@
 body {
-  background-color: white;
   font-family: sans-serif;
   background-size: cover;
   background-attachment: fixed;
   margin: 0;
 }
 
-.globalnavbar{
+p{
+  text-shadow:1px 1px 1px black;
+  filter: Shadow(Color=black, Direction=130, Strength=1);
+  color: white;
+  padding:
+}
+
+header{
+  text-shadow:1px 1px 1px black;
+  filter: Shadow(Color=black, Direction=130, Strength=1);
+  color: white;
+  font-size: 35px;
+}
+
+#nav{
   width: 100%;
-  height: 100px;
-  margin: 0;
-  padding: 0;
-  background: #white;
+  height: 85px;
+  background: transparent;
   list-style-type: none;
   text-align: right;
   overflow: auto;
   align-items: center;
+  position: fixed;
 
 }
 
-.globalnavbar a{
+#nav a{
   display: inline-block;
   font-size: 20px;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
   text-decoration: none;
   opacity: 1;
   color: #4d4d4d;
-
 }
 
-.globalnavbar a:hover {
+#nav a:hover {
     transition: 0.3s;
     opacity: 0.6;
     color: #00ffcc;
 }
 
-.globalnavbar #logo {
-  font-size: 50px;
-  padding: 20px;
+#nav #logo {
+  font-size: 25px;
+  padding-top: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
   position: absolute;
   text-align: left;
   width: auto;
   align-self: flex-start;
+  color: #4d4d4d;
 }
+
+#nav.shrink {
+  height: 65px;
+  width: 100%;
+  transition: all ease .5s;
+  background: white;
+}
+
+#nav.shrink #logo {
+  font-size: 25px;
+  padding-top: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: absolute;
+  text-align: left;
+  width: auto;
+  align-self: flex-start;
+  color: #4d4d4d;
+}
+
 
 .workhistory{
+  padding-top: 45vh;
   padding-left: 15px;
   padding-right: 15px;
-  height: 100vh;
+  height: 100%;
   text-align: center;
-  background-color: rgba(89,89,89,0.5);
+  background-color: rgba(89,89,89,0.0);
 }
 
-.quote{
-  padding-left: 15px;
-  padding-right: 15px;
+.myName{
+  padding: 25px;
   text-align: center;
+  color: white;
+  font-size: 65px;
+  font-weight: 700;
+  font-family: Verdana, Geneva, sans-serif;
+
+}
+
+hr{
+  border-width: 2px;
+  width: 50px;
+  max-width: 50px;
+
+}
+
+.timeline{
+  padding: 20px;
+  font-size: 20px;
+  color: white;
 }
 
 .jobtitle{
@@ -70,13 +122,15 @@ body {
 .homepage-section-aboutme{
   width: 100%;
   height: 75%;
-  padding-left: 15px;
-  padding-right: 15px;
   padding-top: 50px;
-
+  text-align: center;
+  background-color: rgba(89,89,89,1);
+  display: block;
 }
 
-.homepage-section-aboutme .profilepic{
+
+.profilepic{
+  padding: 25px;
   max-width: 250px;
   height: auto;
   border-radius: 50%;
@@ -90,31 +144,76 @@ body {
   text-align: center;
 }
 
-.homepage-section-aboutme .profiledescription{
+.profiledescription{
   text-align: center;
-  display: inherit;
-  margin-left: inherit;
-  margin-right: inherit;
+  font-size: 20px;
+  width: 1000px;
+  margin: auto;
+  padding: 25px;
 }
+
+.skills{
+
+}
+
 
 .homepage-section-portfolio{
   width: 100%;
   height: auto;
-  background: rgba(89, 89, 89, 0.5);
-  filter: alpha(opacity=60);
+  /*background: rgba(89, 89, 89, 0.5);*/
+  background: rgb(89,89,89)
+}
+
+.Crowdtour{
+/*
+  content: "";
+  clear: both;
+  display: table;
+  border: 3px solid #000000;
+  */
+  padding: 5px;
+  overflow: auto;
+  border: 3px solid #000000;
+}
+
+.Snakegame{
+  padding: 5px;
+  overflow: auto;
+  border: 3px solid #000000;
+}
+
+.Meetup_Groups{
+  padding: 5px;
+  overflow: auto;
+ border: 3px solid #000000;
+}
+
+.Student_Swap{
+  padding: 5px;
+  overflow: auto;
+ border: 3px solid #000000;
 }
 
 .homepage-section-portfolio .porfolioimg{
   width: auto;
   height: auto;
-  max-width: 300px;
+  max-width: 250px;
   max-height: 300px;
   border-radius: 20px;
   height: auto;
-  clear: center;
-  display: block;
   margin-left: auto;
   margin-right: auto;
+  float: left;
+}
+
+.projectdesc{
+display: inline-block;
+width: 500px;
+padding: 25px;
+}
+
+.projectbtn{
+
 }
 
 .homepage-section-portfolio .aboutme-p{
