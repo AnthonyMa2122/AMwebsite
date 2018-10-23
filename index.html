@@ -12,21 +12,19 @@
 <body class = "main" background="imges/sanfranciscobackground.jpg">
 
   <nav id="nav">
-    <div>
-    <li id="logo">Anthony Ma</li>
-    <a href="#Aboutme">About Me</a>
-    <a href="#Porfolio">Porfolio</a>
-    <a href="#ContactMe">Contact Me</a>
-  </div>
+      <li id="logo">Anthony Ma</li>
+      <a href="#Aboutme">About Me</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact Me</a>
   </nav>
 
-  <section class="workhistory">
+  <section class="container">
     <header class = "myName">Anthony Ma</header>
     <hr>
     <div class="timeline">
      <p>Software | Testing | Planning</p>
-     </div>
-     <a href="#AboutMe" class="btn btn-primary btn-xl page-scroll">About me</a>
+    </div>
+     <a href="#Aboutme" class="btn">About me</a>
   </section>
 
   <section class="homepage-section-aboutme" id="Aboutme">
@@ -36,19 +34,21 @@
     </div>
     <hr>
     <p class="profiledescription">My name is Anthony and I'm a recent graduate from San Francisco State University (Class of August 2018). Currently I live in the lovely San Francisco bay area and am an avid programmer. I spend most of my free time studying or failing at rock climbing.
-      There is always something to learn and hopefully I find it on the way up!
-
-    </p>
+      There is always something to learn and hopefully I find it on the way up!</p>
   </section>
 
-  <section class="skills">
+  <section class="skills" id="skills">
+    <header>Skills</header>
     <div>
-      <header>Skills</header>
+      <p>Languages: Java, Python, C++, Html, Ruby</p>
+      <p>Databases: MySQL</p>
+      <p>Web Frameworks: Rest APIs, Amazon Web Servic</p>
+      <p>Personal Studies: NodeJS and Selenium for automation</p>
     </div>
   </section>
 
-  <section class="homepage-section-portfolio">
-    <p class="aboutme-p"> My Projects</p>
+  <section class="homepage-section-portfolio" id="portfolio">
+    <p>My Projects</p>
     <div class="Crowdtour">
       <img class="porfolioimg" src="imges/Crowdtourimg.jpeg" alt="">
       <div class="projectdesc">
@@ -77,7 +77,7 @@
     </div>
 </section>
 
-<section class="homepage-section-contact">
+<section class="homepage-section-contact" id="contact">
     My contact screen?
 </section>
 
