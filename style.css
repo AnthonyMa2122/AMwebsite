@@ -18,6 +18,18 @@ header{
   font-size: 35px;
 }
 
+ul{
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+
+li{
+  text-shadow:1px 1px 1px black;
+  filter: Shadow(Color=black, Direction=130, Strength=1);
+  color: white;
+}
+
 #nav{
   width: 100%;
   height: 85px;
@@ -136,8 +148,9 @@ hr{
   width: 100%;
   height: 75%;
   padding-top: 75px;
+  padding-bottom: 35px;
   text-align: center;
-  background-color: rgba(89,89,89,1);
+  background-color: rgba(89,89,89,0.8);
   display: block;
 }
 
@@ -160,25 +173,52 @@ hr{
 .profiledescription{
   text-align: center;
   font-size: 20px;
-  width: 1000px;
+  width: 80%;
   margin: auto;
-  padding: 25px;
+}
+
+.myskills-header{
+  padding-top: 75px;
 }
 
 .skills{
   width: 100%;
-  height: 50%;
-  padding-top: 75px;
+  height: auto;
+  background-color: rgba(255,255,255,0.5);
   text-align: center;
-  display: block;
+  padding-bottom: 50px;
+}
+
+.skills-container{
+  display: flex;
+  align-items: flex-start;
+  padding-top: 60px;
+}
+
+.skill-header{
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+.favicon-img{
+  width: 75px;
+  height: 75px;
+  padding-bottom: 15px;
+}
+
+.flex-container {
+    display: block;
+    text-align: center;
+    width: 25%;
+    padding: 0px;
 }
 
 
 .homepage-section-portfolio{
   width: 100%;
   height: auto;
-  /*background: rgba(89, 89, 89, 0.5);*/
-  background: rgb(89,89,89)
+  background: rgba(89, 89, 89, 0.8);
+  /*background: rgb(89,89,89)*/
 }
 
 .Crowdtour{
@@ -194,9 +234,10 @@ hr{
 }
 
 .Snakegame{
-  padding: 5px;
-  overflow: auto;
-  border: 3px solid #000000;
+  display: block;
+  text-align: center;
+  width: 25%;
+  padding: 0px;
 }
 
 .Meetup_Groups{
@@ -215,7 +256,7 @@ hr{
   width: auto;
   height: auto;
   max-width: 250px;
-  max-height: 300px;
+  max-height: 250px;
   border-radius: 20px;
   height: auto;
   margin-left: auto;

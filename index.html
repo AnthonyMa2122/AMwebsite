@@ -28,7 +28,7 @@
   </section>
 
   <section class="homepage-section-aboutme" id="Aboutme">
-    <header class="whoami">Who am I?</header>
+    <header>Who am I?</header>
     <div class="profilepic-div">
       <img class= "profilepic" src="imges/Bojackprofilepic.jpg" alt="">
     </div>
@@ -38,30 +38,62 @@
   </section>
 
   <section class="skills" id="skills">
-    <header>Skills</header>
-    <div>
-      <p>Languages: Java, Python, C++, Html, Ruby</p>
-      <p>Databases: MySQL</p>
-      <p>Web Frameworks: Rest APIs, Amazon Web Servic</p>
-      <p>Personal Studies: NodeJS and Selenium for automation</p>
+    <header class="myskills-header">My Skills</header>
+    <div class="skills-container">
+      <div class="flex-container">
+      <img class="favicon-img" src="imges/laptop-favicon.png" alt="">
+      <header class="skill-header">Languages</header>
+      <ul>
+        <li>Java</li>
+        <li>Python</li>
+        <li>C++</li>
+        <li>HTML</li>
+        <li>Ruby</li>
+      </ul>
+      </div>
+
+      <div class="flex-container">
+        <img class="favicon-img" src="imges/server-favicon.png" alt="">
+        <header class="skill-header">Databases</header>
+        <ul>
+          <li>MySQL</li>
+          <li>MongoDB</li>
+        </ul>
+      </div>
+
+      <div class="flex-container">
+        <img class="favicon-img" src="imges/gear-favicon.png" alt="">
+        <header class="skill-header">Others</header>
+        <ul>
+          <li>Git/Github</li>
+          <li>Rest API's</li>
+          <li>Amazon Web Service</li>
+        </ul>
+      </div>
+
+      <div class="flex-container">
+        <img class="favicon-img" src="imges/open-book-favicon.png" alt="">
+        <header class="skill-header">Personal Studies</header>
+        <ul>
+          <li>NodeJs</li>
+          <li>Selenium</li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <section class="homepage-section-portfolio" id="portfolio">
-    <p>My Projects</p>
     <div class="Crowdtour">
       <img class="porfolioimg" src="imges/Crowdtourimg.jpeg" alt="">
       <div class="projectdesc">
         <p>Our neat little python project. The goal was to geocache audio files onto for others to listen to. Check out our pet project here.</p>
       </div>
-      <button class ="projectbtn">Project</button>
     </div>
     <div class="Snakegame">
       <img class="porfolioimg"src="imges/Snakey.jpg" alt="">
       <div class="projectdesc">
         <p>Imagine snake! Now imagine your little reptile with a higher range of motion. Rather than restrict our buddy to four directions, we decided to give it some freedom. This project was done on Java and Javafx!</p>
       </div>
-      <button class ="projectbtn">Project</button>
     </div>
     <div class="Meetup_Groups">
       <img class="porfolioimg" src="imges/meetupgroups.png" alt="">
@@ -78,7 +110,11 @@
 </section>
 
 <section class="homepage-section-contact" id="contact">
-    My contact screen?
+    <div>
+      <div>email</div>
+      <div>linkedin</div>
+      <dic>github</dic>
+    </div>
 </section>
 
 <footer class= "contactme-footer">
