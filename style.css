@@ -90,7 +90,6 @@ li{
   color: #4d4d4d;
 }
 
-
 .container{
   padding-top: 35vh;
   padding-left: 15px;
@@ -150,7 +149,7 @@ hr{
   padding-top: 75px;
   padding-bottom: 35px;
   text-align: center;
-  background-color: rgba(89,89,89,0.8);
+  background-color: rgba(89,89,89,1);
   display: block;
 }
 
@@ -215,63 +214,98 @@ hr{
 
 
 .homepage-section-portfolio{
+  display: inline-block;
+  text-align: center;
+  flex: wrap;
   width: 100%;
   height: auto;
   background: rgba(89, 89, 89, 0.8);
-  /*background: rgb(89,89,89)*/
+  padding-top: 75px;
+  padding-bottom: 50px;
 }
 
-.Crowdtour{
-/*
-  content: "";
-  clear: both;
-  display: table;
-  border: 3px solid #000000;
-  */
-  padding: 5px;
-  overflow: auto;
-  border: 3px solid #000000;
+.project-header{
+  padding: 25px;
 }
 
-.Snakegame{
-  display: block;
+.project{
+  position: relative;
+  display: inline-block;
   text-align: center;
-  width: 25%;
-  padding: 0px;
-}
-
-.Meetup_Groups{
-  padding: 5px;
-  overflow: auto;
- border: 3px solid #000000;
-}
-
-.Student_Swap{
-  padding: 5px;
-  overflow: auto;
- border: 3px solid #000000;
-}
-
-.homepage-section-portfolio .porfolioimg{
-  width: auto;
-  height: auto;
+  padding: 15px;
+  overflow: hidden;
+  height: 250px;
+  width: 250px;
   max-width: 250px;
   max-height: 250px;
-  border-radius: 20px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  float: left;
+  margin:5px;
+}
+
+.description-layer{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(89, 89, 89, 0.6);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  transition: opacity .2s, visibility .2s;
+}
+
+.project:hover .description-layer{
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.project a{
+  position: absolute;
+  height: 250px;
+  width: 250px;
+}
+
+.project a:hover {
+    transition: 0.2s;
+    opacity: 0.3;
+    background: #595959;
+}
+
+.Crowdtour-link{
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+
+.crdimg{
+  height: 250px;
+  width: 250px;
+  object-fit: none;
+  object-position: 50% 0%;
+  border-radius: 25px;
+}
+
+.snakeimg{
+  height: 250px;
+  width: 250px;
+  object-fit: none;
+  object-position: 50% 50%;
+  border-radius: 25px;
+}
+
+.porfolioimg{
+  width: 250px;
+  height: 250px;
 }
 
 .projectdesc{
 display: inline-block;
 width: 500px;
 padding: 25px;
-}
-
-.projectbtn{
-
 }
 
 .homepage-section-portfolio .aboutme-p{
