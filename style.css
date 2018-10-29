@@ -53,7 +53,7 @@ li{
   overflow: auto;
   align-items: center;
   position: fixed;
-
+  z-index: 1;
 }
 
 #nav a{
