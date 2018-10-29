@@ -74,11 +74,11 @@ li{
 }
 
 #nav #logo {
-  position: absolute;
+  display: inline-block;
+  float: left;
   text-align: left;
   width: auto;
   align-self: flex-start;
-  color: #4d4d4d;
   text-shadow: none;
 }
 
@@ -91,15 +91,14 @@ li{
 }
 
 #nav.shrink #logo {
-
-  position: absolute;
+  float: left;
   text-align: left;
   width: auto;
   align-self: flex-start;
   color: #4d4d4d;
 }
 
-.container{
+.homepage-section-intro{
   padding-top: 35vh;
   padding-left: 15px;
   padding-right: 15px;
@@ -219,7 +218,7 @@ hr{
   padding-top: 75px;
 }
 
-.skills{
+.homepage-section-skills{
   width: 100%;
   height: auto;
   background-color: rgba(255,255,255,0.5);
