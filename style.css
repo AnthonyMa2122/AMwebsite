@@ -142,6 +142,10 @@ hr{
   text-decoration: none;
 }
 
+.favicon:hover{
+  filter: grayscale(100%);
+}
+
 .timeline{
   padding: 0px;
   font-size: 20px;
@@ -169,6 +173,12 @@ hr{
   color: white;
   font-weight: 20;
 }
+
+.btn:hover{
+  transition: 0.3s;
+  background: #595959;
+}
+
 
 .homepage-section-aboutme{
   width: 100%;
@@ -224,7 +234,7 @@ hr{
 }
 
 .skill-header{
-  font-size: 20px;
+  font-size: 25px;
   padding-top: 15px;
 }
 
@@ -351,6 +361,7 @@ hr{
   display: inline-block;
   padding: 5px;
   text-shadow:1px 1px 1px black;
+  font-family: Lato;
 }
 
 .footer{
@@ -361,4 +372,5 @@ hr{
 
 .footer p{
   margin: 0;
+  background: #202020;
 }
