@@ -9,6 +9,11 @@ p{
   text-shadow:1px 1px 1px black;
   filter: Shadow(Color=black, Direction=130, Strength=1);
   color: white;
+  font-family: Lato;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 23px;
 }
 
 header{
@@ -16,6 +21,12 @@ header{
   filter: Shadow(Color=black, Direction=130, Strength=1);
   color: white;
   font-size: 35px;
+  color: white;
+  font-family: Lato;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 23px;
 }
 
 ul{
@@ -28,6 +39,9 @@ li{
   text-shadow:1px 1px 1px black;
   filter: Shadow(Color=black, Direction=130, Strength=1);
   color: white;
+  font-family: Lato;
+  font-style: normal;
+  font-variant: normal;
 }
 
 #nav{
@@ -50,39 +64,34 @@ li{
   padding-right: 20px;
   text-decoration: none;
   opacity: 1;
-  color: #4d4d4d;
+  color: #202020;
 }
 
 #nav a:hover {
     transition: 0.3s;
     opacity: 0.6;
-    color: #00ffcc;
+    color: #f2f2f2;
 }
 
 #nav #logo {
-  font-size: 25px;
-  padding-top: 18px;
-  padding-left: 50px;
-  padding-right: 20px;
   position: absolute;
   text-align: left;
   width: auto;
   align-self: flex-start;
   color: #4d4d4d;
+  text-shadow: none;
 }
+
 
 #nav.shrink {
   height: 65px;
   width: 100%;
   transition: all ease .5s;
-  background: white;
+  background: #ada7aa;
 }
 
 #nav.shrink #logo {
-  font-size: 25px;
-  padding-top: 18px;
-  padding-left: 50px;
-  padding-right: 20px;
+
   position: absolute;
   text-align: left;
   width: auto;
@@ -100,7 +109,7 @@ li{
 }
 
 .myName{
-  padding-bottom: 0px;
+  padding-bottom: 20px;
   text-align: center;
   color: white;
   font-size: 65px;
@@ -150,23 +159,24 @@ hr{
   border: 0;
   border-radius: 300px;
   text-transform: uppercase;
-  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-  font-weight: 700;
-  padding: 15px 30px;
-  background-color: #33334d;
+  font-family: Lato;
+  font-weight: 50;
+  padding: 15px 20px;
+  background-color: #202020;
   text-decoration: none;
-  text-shadow:1px 1px 1px black;
+  text-shadow:0px 0px 0px black;
   filter: Shadow(Color=black, Direction=130, Strength=1);
   color: white;
+  font-weight: 20;
 }
 
 .homepage-section-aboutme{
   width: 100%;
-  height: 75%;
+  height: auto;
   padding-top: 75px;
   padding-bottom: 35px;
   text-align: center;
-  background-color: rgba(86,86,86,1);
+  background-color: #202020;
   display: block;
 }
 
@@ -191,7 +201,9 @@ hr{
   font-size: 20px;
   width: 80%;
   margin: auto;
-}
+  text-shadow: 0 0 0 black;
+
+  }
 
 .myskills-header{
   padding-top: 75px;
@@ -236,7 +248,7 @@ hr{
   flex: wrap;
   width: 100%;
   height: auto;
-  background: rgba(89, 89, 89, 0.8);
+  background: #202020;
   padding-top: 75px;
   padding-bottom: 50px;
 }
@@ -264,7 +276,7 @@ hr{
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(89, 89, 89, 0.6);
+  background: rgba(89, 89, 89, .8);
   color: #fff;
   visibility: hidden;
   opacity: 0;
@@ -272,6 +284,13 @@ hr{
   align-items: center;
   justify-content: center;
   transition: opacity .2s, visibility .2s;
+  border-radius: 25px;
+  border-style: solid;
+}
+
+.description-layer p{
+  text-align: center;
+
 }
 
 .project:hover .description-layer{
@@ -281,21 +300,26 @@ hr{
 
 
 .project a{
-  position: absolute;
-  height: 250px;
-  width: 250px;
+  background-color: #333333;
+  border-width: 1px;
+  border-style: double;
+  border-radius: 25px;
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  margin-top: 15px;
+  bor
 }
 
 .project a:hover {
     transition: 0.2s;
-    opacity: 0.3;
-    background: #595959;
+    opacity: 1;
+    background: #262626;
 }
 
+
 .Crowdtour-link{
-    height: 250px;
-    width: 250px;
-    text-decoration: none;
 }
 
 .crdimg{
@@ -321,23 +345,20 @@ hr{
 }
 
 .elements{
-  background-color: #6FBBFF;
+  background-color: #404040;
   border-width: 3px;
-  border-radius: 5px;
   border-color: black;
   display: inline-block;
   padding: 5px;
+  text-shadow:1px 1px 1px black;
 }
 
-.homepage-section-contact{
-  width: 100%;
-  height: auto;
+.footer{
+  text-align: center;
+  display: block;
+  background: rgba(89, 89, 89, 0.3);
 }
 
-.contactme-footer {
-  vertical-align: baseline;
+.footer p{
   margin: 0;
-  padding: 0;
-  color: white;
-  background-color: rgba(51, 51, 51, 0.9);
 }
