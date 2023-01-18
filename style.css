@@ -114,6 +114,7 @@ li{
   font-size: 65px;
   font-weight: 700;
   font-family: Verdana, Geneva, sans-serif;
+  line-height: 125%;
 
 }
 
@@ -224,12 +225,14 @@ hr{
   background-color: rgba(255,255,255,0.5);
   text-align: center;
   padding-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 .skills-container{
   display: flex;
   align-items: flex-start;
   padding-top: 60px;
+  flex-wrap: wrap;
 }
 
 .skill-header{
@@ -264,6 +267,7 @@ hr{
 
 .project-header{
   padding: 25px;
+  line-height: 125%;
 }
 
 .project{
